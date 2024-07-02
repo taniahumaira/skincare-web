@@ -1,0 +1,328 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="CSS_files/for-each-image.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Plugins/slick-master/slick/slick-theme1.css"/>
+        <script type="text/javascript" src="Plugins/slick-master/slick/slick.min.js"></script>
+        <script src="JS_files/for-each-image.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Plugins\jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom\wm-zoom\jquery.wm-zoom-1.0.min.css">
+        <style>
+          a:hover,a{color:black}
+        </style>
+    </head>
+    <body>
+            <!--pop up-->
+    <div class="container-fluid mt-5 pop-container" style="position:absolute;z-index:3;background-color: transparent;">
+        <div class="container bg-light mt-2 mb-2 pt-2" style="border-radius:20px;">
+            <div class="row pt-5">
+                <div class="col-6 text-left pt-2 table-header">
+                    <span style="font-size:25px;">Size Chart</span>
+                </div>
+                <div class="col-6 text-right pr-5">
+                    <span style="font-size:35px;" class="close-pop"><a href="#/" style="color:black">&times;</a></span>                                                                
+                </div>
+            </div>
+            <div class="row pt-3 table-header" style="font-size:20px;">
+                <div class="col-12">
+                    Veirdo Men's Shirts size chart
+                </div>
+                <div class="col-12">
+                    shirts
+                </div>
+            </div>
+            <div class="row pt-3 pb-5 table">
+                <div class="col">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 table-header">
+                    <p class="pt-3">Measuring T Shirt Size</p>
+                    <span>Not sure about your t shirt size? Follow these simple steps to figure it out:</span><br>
+                    <span style="font-weight: 600;">Shoulder</span> - Measure the shoulder at the back, from edge to edge with arms relaxed on both sides<br>
+                    <span style="font-weight:600;">Chest</span> - Measure around the body under the arms at the fullest part of the chest with your arms relaxed at both sides.<br>
+                    <span style="font-weight:600;">Sleeve</span> - Measure from the shoulder seam through the outer arm to the cuff/hem<br>
+                    <span style="font-weight:600;">Neck</span> - Measured horizontally across the neck Length - Measure from the highest point of the shoulder seam to the bottom hem of the garment's<br>
+                </div>
+                <div class="col-12 text-center pt-5 pb-5">
+                    <img src="Images/shirt-detail.jpg" height="300px" width="50%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--pop up-->
+             <!--header part start-->                
+     <div class="container-fluid text-white" id="change-color">
+        <div class="row" id="top-containt">
+          <div class="col-4 text-center">
+            <a href="login-ecommerce.html"><img src="Images/shopping-logo.png" height="130px" class="color logo-1 logo-sift"></a>
+            <a href="login-ecommerce.html"><img src="Images/pinterest_icon.png" height="70px" class=" color logo-2 mt-1 ml-2"></a>
+          </div>
+          <div class="col-8 pt-4 mt-1 text-center">
+            <span class="dropdown dropdown-toggle profile" data-toggle="dropdown" style="color:black" >
+              <a href="#/"><img src="Images/profile-icon.png" class="profile-icon color"></a>
+            </span>
+            <ul class="dropdown-menu mt-4 text-center" style="margin-left:-6%;border-radius:10px;">
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Help Center </a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Order History</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Change Password</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="#/" class="color" style="font-weight:600">Update Profile</a></li>
+              <li class="pre-profile-1 pt-2 pb-2"><a href="ecommerce.html" class="color" style="font-weight:600">Log Out</a></li>
+            </ul>
+            <span class="menu-1"><a href="login-ecommerce.html" class="color">home</a></span>
+            <span class="menu"><a href="Logged_in_product_page.html" class="color">products</a></span>
+            <span class="menu"><a href="logged_in_about_us.html" class="color">about</a></span>
+            <span class="menu"><a href="contact-form.html" class="color">contact</a></span>
+            <span class="menu-bar text-right"><a href="#/" class="color">&#9776;</a></span>
+            <span class="menu-bar-1 text-right"><a href="#/" class="color">&#9776;</a></span>
+            <span class="menu-bar-2 text-right"><a href="#/" class="color">&#9776;</a></span>
+          </div>
+        </div>
+        <div class="container-fluid side-bar px-0">
+          <div class="col-12 text-right bg-danger"> 
+            <span class="close"><a href="#/" class="color">&times;</a></span>
+          </div>
+            <ul class="pt-5 pre-side-bar">
+              <li class="pt-4" style="margin-left:-5%;"><a href="login-ecommerce.html" class="color">home</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="Logged_in_product_page.html" class="color">products</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="logged_in_about_us.html" class="color">about</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="contact-form.html" class="color">contact</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="#/" class="color">Update profile</a></li>
+              <li class="pt-3"style="margin-left:-5%"><a href="ecommerce.html" class="color">Log Out</a><span><a href="#" class="color"><img src="log-in..png" class="log-in"></a></span></li>
+            </ul>
+        </div>
+    </div>
+    <!--header part end-->
+    <!--middle part start-->
+    <div class="container mt-5 pt-4 hide-for-tablate">
+        <div class="row pt-5">
+            <div class="col-1">
+                <div class="row pt-3 pb-2">
+                    <div class="col-xl-12 text-center">
+                        <a href="#/"><img src="img/Anua - Heartleaf Quercetinol Pore Deep Cleansing Foam _ YesStyle.jpeg" height="50px" width="100%" class="zooming"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 text-center zooming-open-head wm-zoom-container my-zoom-1">
+              <div class="wm-zoom-box">
+                <img src="img/Anua - Heartleaf Quercetinol Pore Deep Cleansing Foam _ YesStyle.jpeg" height="400px" width="405px" class="wm-zoom-default-img" alt="alternative text" data-hight-src="for-each-image-1.jpg">
+              </div>
+            </div>
+<!--hidden--> <div class="col-5 text-center zooming-open-1 wm-zoom-container my-zoom-1">
+              <div class="wm-zoom-box">
+                <img src="Images/for-each-image-2.jpg" height="400px" width="405px" class="wm-zoom-default-img" alt="alternative text" data-hight-src="for-each-image-2.jpg">
+              </div>
+            </div>
+<!--hidden--> <div class="col-5 text-center zooming-open-2">
+                <img src="Images/for-each-image-3.jpg" height="400px" width="95%">
+              </div>
+<!--hidden--> <div class="col-5 text-center zooming-open-3">
+                <img src="Images/for-each-image-5.jpg" height="400px" width="95%">
+            </div>
+<!--hidden--> <div class="col-5 text-center zooming-open-4">
+                <img src="Images/for-each-image-6.jpg" height="400px" width="95%">
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-12 pt-3">
+                        <p style="font-size:25px;font-weight:600">Anua - Heartleaf Quercetinol Pore Deep Cleansing Foam</p>
+                    </div>
+                    <div class="col-12 pl-5">
+                        <p style="font-weight:600;font-size:20px;"> Price:<span style="color:red">&#8377;90.000-&#8377;130.000</span></p>
+                    </div>
+                    <div class="col-12">
+                        <ul>
+                          <h3>BAHAN UTAMA</h3>
+                            <li>Anti Jerawat : Asam Salisilat</li>
+                            <li>Antioksidan : Ekstrak Houttuynia Cordata (33,4%), Kuersetin(10.000 Ppb), Tokoferol, Natrium Hyaluronate Crosspolymer</li>
+                            <li>Pengelupasan : Asam Salisilat, Asam Kapriloil Salisilat</li>
+                            <li>Bahan yang identik dengan kulit : Gliserin, Natrium Hyaluronate, Asam Hyaluronic, Natrium Hyaluronate Crosspolymer</li>
+                            <li>Menenangkan : Ekstrak Houttuynia Cordata (33,4%), Kuersetin(10.000 Ppb), Asam salisilat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="row pt-2">
+            <div class="col-6">
+              <span style="visibility: hidden;;">hello user</span>
+            </div>
+            <div class="col-6 pl-5 text-white">
+                <a href="cart.html" style="color:white"><span style="width:30%;border:1px solid;padding:2% 5%;text-transform: uppercase;font-size:15px;font-weight:600;background-color:rgb(255, 174, 0);border-radius:10px;"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span class="ml-2">add to card</span></span></a>
+                <a href="payment.html" style="color:white"><span style="width:30%;border:1px solid;padding:2% 5%;text-transform: uppercase;font-size:15px;font-weight:600;background-color:orangered;border-radius:10px;" class="ml-3"><i class="fa fa-bolt" aria-hidden="true"></i><span class="ml-2"> buy now</span></span></a>
+            </div>
+        </div>
+        <style>
+          a:hover, a { color: black; }
+          .star-rating .fa-star { color: gold; }
+      </style>
+  </head>
+  <body>
+      <!-- Your existing HTML content -->
+  
+      <!-- Add testimonial/comment section below the product details -->
+      <div class="container mt-5">
+          <h2>Customer Reviews</h2>
+          <div class="row">
+              <div class="col-md-6">
+                  <form id="reviewForm">
+                      <div class="form-group">
+                          <label for="name">Name:</label>
+                          <input type="text" class="form-control" id="name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="rating">Rating:</label>
+                          <div class="star-rating">
+                              <span class="fa fa-star" data-rating="1"></span>
+                              <span class="fa fa-star" data-rating="2"></span>
+                              <span class="fa fa-star" data-rating="3"></span>
+                              <span class="fa fa-star" data-rating="4"></span>
+                              <span class="fa fa-star" data-rating="5"></span>
+                              <input type="hidden" name="rating" id="rating" value="0">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="comment">Comment:</label>
+                          <textarea class="form-control" id="comment" rows="3" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit Review</button>
+                  </form>
+              </div>
+              <div class="col-md-6">
+                  <h3>Reviews</h3>
+                  <div id="reviews">
+                      <!-- Reviews will be displayed here -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Existing footer scripts -->
+      <script>
+          $(document).ready(function(){
+              // Star rating click event
+              $('.star-rating .fa-star').on('click', function() {
+                  var rating = $(this).data('rating');
+                  $('#rating').val(rating);
+                  $('.star-rating .fa-star').removeClass('checked');
+                  for (var i = 1; i <= rating; i++) {
+                      $('.star-rating .fa-star[data-rating="' + i + '"]').addClass('checked');
+                  }
+              });
+  
+              // Handle form submission
+              $('#reviewForm').on('submit', function(e) {
+                  e.preventDefault();
+                  var name = $('#name').val();
+                  var rating = $('#rating').val();
+                  var comment = $('#comment').val();
+  
+                  if(rating > 0){
+                      var reviewHTML = `
+                          <div class="review">
+                              <h4>${name}</h4>
+                              <div class="star-rating">` +
+                                  Array.from({length: rating}, (_, i) => `<span class="fa fa-star checked"></span>`).join('') +
+                                  Array.from({length: 5 - rating}, (_, i) => `<span class="fa fa-star"></span>`).join('') +
+                              `</div>
+                              <p>${comment}</p>
+                          </div>
+                          <hr>`;
+                      $('#reviews').prepend(reviewHTML);
+                      $('#reviewForm')[0].reset();
+                      $('.star-rating .fa-star').removeClass('checked');
+                      $('#rating').val(0);
+                  } else {
+                      alert('Please select a rating.');
+                  }
+              });
+          });
+      </script>
+      <script type="text/javascript" src="Plugins/jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom/assets/js/jquery-1.11.1.js"></script>
+      <script type="text/javascript" src="Plugins/jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom/wm-zoom/jquery.wm-zoom-1.0.min.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+          $(document).ready(function(){
+              $('.my-zoom-1').WMZoom();
+              config : {
+                  inner : true
+              }
+          });
+          AOS.init({
+              once: true,
+              duration: 1000,
+          });
+      </script>
+    <!--footer-->
+    <script type="text/javascript">
+      //for single slider
+$('.single-slider').slick({
+  dots: false,
+  infinite:false,
+  autoplaySpeed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+        arrows: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+}); 
+    </script>
+    <script type="text/javascript" src="Plugins\jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom\assets\js\jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="Plugins\jQuery-Plugin-For-Image-Hover-Zoom-WM-Zoom\wm-zoom\jquery.wm-zoom-1.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+    <script type="text/javascript">
+      $(document).ready(function(){
+      $('.my-zoom-1').WMZoom();
+        config : {
+          inner : true
+        }
+      });
+      </script>
+       <script>
+        AOS.init({
+          once:true,
+          duration:1000,
+        });
+      </script>
+      
+    </body>
+</html>
